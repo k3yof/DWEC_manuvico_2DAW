@@ -1,0 +1,15 @@
+.divprincipal{
+    background-color:lightslategray;
+    width: 500px;
+    text-align: center;
+}
+
+
+p{
+    margin: 1em;
+}
+
+button{
+    width: 70px;
+    height: 20px;
+}
