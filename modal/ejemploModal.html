@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/ejemploModal.css">
+<link rel="stylesheet" href="ejemploModal.css">
 </head>
 <body>
     <h2>Ventana modal</h2>
@@ -10,7 +10,9 @@
     https://didacticode.com/snippet-ventana-modal-modal-box-con-javascript/
     -->
 
-    <button id="abrirModal">Abrir Modal</button>
+    <button id="español">Español</button>
+    <button id="ingles">Ingles</button>
+    <button id="ruso">Ruso</button>
 
     <!-- Ventana modal, por defecto no visiblel -->
     <div id="ventanaModal" class="modal">
@@ -20,6 +22,22 @@
             <p>Esto es el texto de la ventana</p>
         </div>
     </div>
-    <script src="js/ejemploModal.js"></script>
+      <!-- Ventana modal, por defecto no visiblel -->
+      <div id="ventanaModalI" class="modal">
+        <div class="contenido-modalF">
+            <span class="cerrar">&times;</span>
+            <h2>Modal windows</h2>
+            <p>This is modal windows</p>
+        </div>
+    </div>
+    <!-- Ventana modal, por defecto no visiblel -->
+    <div id="ventanaModalR" class="modal">
+        <div class="contenido-modalR">
+            <span class="cerrar">&times;</span>
+            <h2>Модальное окно</h2>
+            <p> Это текст окна</p>
+        </div>
+    </div>
+    <script src="ejemploModal.js"></script>
 </body>
 </html>
