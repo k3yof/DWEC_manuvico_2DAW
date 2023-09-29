@@ -27,28 +27,7 @@ wbody {font-family: Arial, Helvetica, sans-serif;}
     animation-name: animarsuperior;
     animation-duration: 0.5s
 }
-.contenido-modalF {
-    position: relative; /* Relativo con respecto al contenedor -modal- */
-    background-color: lightblue;
-    margin: auto; /* Centrada */
-    padding: 20px;
-    width: 60%;
-    -webkit-animation-name: animarsuperior;
-    -webkit-animation-duration: 0.5s;
-    animation-name: animarsuperior;
-    animation-duration: 0.5s
-}
-.contenido-modalR {
-    position: relative; /* Relativo con respecto al contenedor -modal- */
-    background-color: purple;
-    margin: auto; /* Centrada */
-    padding: 20px;
-    width: 60%;
-    -webkit-animation-name: animarsuperior;
-    -webkit-animation-duration: 0.5s;
-    animation-name: animarsuperior;
-    animation-duration: 0.5s
-}
+
 
 /* Animación */
 @-webkit-keyframes animatetop {
