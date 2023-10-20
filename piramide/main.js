@@ -219,32 +219,45 @@ function pintaRomboNumerosInvertidos(tamaño)
 pintaRomboNumerosInvertidos(5);
 
 
-function dibujarRomboHueco(tamaño) {
+function pintaRomboHueco(tamaño) {
     if (tamaño % 2 === 0) {
-      tamaño++; // Asegúrate de que el tamaño sea impar para que el rombo sea simétrico
+      tamaño++; // Asegurarse de que el tamaño sea impar
     }
-  
-    let medio = Math.floor(tamaño / 2);
-  
-    for (let i = 0; i < tamaño; i++) {
-      let línea = '';
-      for (let j = 0; j < tamaño; j++) {
-        if (
-          i === medio || // Línea horizontal del medio
-          j === medio || // Línea vertical del medio
-          j === medio - i || // Línea superior izquierda
-          j === medio + i || // Línea superior derecha
-          j === i - medio || // Línea inferior izquierda
-          j === tamaño - 1 - (medio - i) // Línea inferior derecha
-        ) {
-          línea += '*';
-        } else {
-          línea += ' ';
+    let rombo = '';
+    
+    for (let i = 1; i <= tamaño; i += 2) {
+        let espacios = '';
+        let asteriscos = '';
+        for (let j = 0; j < (tamaño - i) / 2; j++) {
+            espacios += ' ';
         }
-      }
-      console.log(línea);
+        for (let j = 0; j < i; j++) {
+            if (j === 0 || j === i - 1) {
+            asteriscos += '*';
+            } else {
+            asteriscos += ' ';
+            }
+        }
+        rombo += espacios + asteriscos + '\n';
     }
+    
+    for (let i = tamaño - 2; i >= 1; i -= 2) {
+        let espacios = '';
+        let asteriscos = '';
+        for (let j = 0; j < (tamaño - i) / 2; j++) {
+            espacios += ' ';
+    }
+    for (let j = 0; j < i; j++) {
+        if (j === 0 || j === i - 1) {
+            asteriscos += '*';
+        } else {
+            asteriscos += ' ';
+        }
+    }
+      rombo += espacios + asteriscos + '\n';
+    }
+  
+    console.log(rombo);
   }
   
-  dibujarRomboHueco(5); // Cambia el tamaño según tus necesidades
-  
+  pintaRomboHueco(5);
