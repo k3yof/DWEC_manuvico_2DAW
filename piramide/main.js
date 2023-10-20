@@ -254,10 +254,9 @@ function pintaRomboHueco(tamaño) {
             asteriscos += ' ';
         }
     }
-      rombo += espacios + asteriscos + '\n';
+        rombo += espacios + asteriscos + '\n';
     }
-  
+    
     console.log(rombo);
-  }
-  
-  pintaRomboHueco(5);
+    }
+pintaRomboHueco(5);
