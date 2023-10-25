@@ -251,7 +251,7 @@ function pintaRomboHueco(tamaño) {
         if (j === 0 || j === i - 1) {
             asteriscos += '*';
         } else {
-            asteriscos += ' ';
+            asteriscos += ' '; //Es el hueco del medio si pones un espacio esta vacio
         }
     }
         rombo += espacios + asteriscos + '\n';
