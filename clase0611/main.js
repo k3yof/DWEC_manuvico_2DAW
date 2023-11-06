@@ -1,19 +1,19 @@
-function shuffle(array) {
+function shuffle(arr) {
 
-    for (let i = 0; i < array.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
       const j = Math.floor(Math.random() * (i + 1));
-      // Cambiamos las posiciones del array
-      [array[i], array[j]] = [array[j], array[i]];
+      // Cambiamos las posiciones del arr
+      [arr[i], arr[j]] = [arr[j], arr[i]];
     }
 }
 
-const myArray = [1, 2, 3,4,5,-1,-6];
-console.log(myArray);
-shuffle(myArray);
-console.log(myArray);
-shuffle(myArray);
-console.log(myArray);
-shuffle(myArray);
-console.log(myArray);
-shuffle(myArray);
-console.log(myArray);
+const arr = [1, 2, 3,4,5,-1,-6];
+console.log(arr);
+shuffle(arr);
+console.log(arr);
+shuffle(arr);
+console.log(arr);
+shuffle(arr);
+console.log(arr);
+shuffle(arr);
+console.log(arr);
