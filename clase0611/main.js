@@ -18,15 +18,15 @@ shuffle(arr);
 console.log(arr);
 
 function unique(arr) {
-  let result = [];
+  let arrFinal = [];
 
   for (let str of arr) {
-    if (!result.includes(str)) {
-      result.push(str);
+    if (!arrFinal.includes(str)) {
+      arrFinal.push(str);
     }
   }
 
-  return result;
+  return arrFinal;
 }
 
 let strings = ["Hare", "Krishna", "Hare", "Krishna", "Krishna", "Krishna", "Hare", "Hare", ":-O"];
