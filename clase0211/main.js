@@ -75,7 +75,6 @@ function copySorted(arr) {
     return arr.slice().sort();
 }
 
-
 let arrayNuevo = ["Arbol", "Virgen", "Estrella"];
 
 let sorted = copySorted(arrayNuevo);
