@@ -60,7 +60,7 @@ function filterRangeInPlace(arr,min,max)
 const originaArray = [1, 5, 8, 10, 15, 20];
 const resulArray = filterRangeInPlace(originaArray, 5, 15);
 
-console.log(resulArray);
+console.log(resulArray.toString());
 
 
 const decreciente = (a, b) => b - a;
@@ -68,4 +68,17 @@ let arr = [5, 2, 1, -10, 8];
 
 arr.sort(decreciente);
 
-alert( arr );
+console.log(arr.toString());
+
+
+function copySorted(arr) {
+    return arr.slice().sort();
+}
+
+
+let arrayNuevo = ["Arbol", "Virgen", "Estrella"];
+
+let sorted = copySorted(arrayNuevo);
+
+console.log( sorted );
+console.log( arrayNuevo );
