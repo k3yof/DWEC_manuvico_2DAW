@@ -30,5 +30,6 @@ function unique(arr) {
 }
 
 let strings = ["Hare", "Krishna", "Hare", "Krishna", "Krishna", "Krishna", "Hare", "Hare", ":-O"];
-unique(strings);
+unique(strings); 
 console.log(strings);
+console.log("Soy manuel y me huele la boca a tocino rancio");
