@@ -1,6 +1,6 @@
 
 
-
+//Detras de cada guion pone mayuscula
 function camelize(str)
 {
     let strPalabras = str.split('-');
