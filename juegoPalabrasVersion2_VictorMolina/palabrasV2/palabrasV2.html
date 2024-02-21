@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego de Palabras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="palabrasV2.css">
+</head>
+<body>
+    <h1>Juego de Palabras</h1>
+
+    <div id="interfaz">
+        <p>Letra actual: <span id="letraActual"></span></p>
+        <p>Tiempo restante: <span id="vTiempo">--</span> segundos</p>
+    </div>
+
+    <div id="nuevaInterfaz" style="display: none;">
+        <p>¡Juego terminado, <span id="nombreUsuario"></span>!</p>
+        <p>Puntuación obtenida: <span id="puntuacionObtenida"></span></p>
+        <p>Puntuación promedio: <span id="puntuacionPromedio"></span></p>
+        <p>Número de partidas jugadas: <span id="numPartidas"></span></p>
+        <button id="reiniciarJuego" class="btn btn-success">Jugar de nuevo</button>
+    </div>
+
+    <div id="botonYdemas">
+        <button id="startButton" class="btn btn-success">Empezar</button>
+        <input type="text" id="palabraInput" placeholder="Introduce una palabra...">
+    </div>
+  
+    <p id="muestraImagen"></p>
+  
+    <script src="palabrasV2.js"></script>
+</body>
+</html>
