@@ -1,0 +1,50 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+}
+
+#letraMostrada {
+  font-size: 18px;
+}
+
+#entradaPalabra {
+  width: 200px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#temporizador {
+  font-size: 18px;
+}
+
+#listaPalabras {
+  list-style-type: none;
+  padding: 0;
+}
+
+#listaPalabras li {
+  margin-bottom: 5px;
+}
+.escondido
+{
+  display: none;
+}
